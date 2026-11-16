@@ -1,0 +1,15 @@
+{
+  "name": "Overturn for Intercom",
+  "description": "Capture AI draft edits in Intercom conversations as replayable cases for Overturn.",
+  "version": "0.1.6",
+  "canvas_kit_version": "2.0",
+  "surfaces": ["inbox"],
+  "parameters": [
+    { "name": "overturn_api_key", "type": "secret", "required": true },
+    { "name": "overturn_base_url", "type": "string", "required": false, "default": "https://api.overturn.run" },
+    { "name": "agent", "type": "string", "required": false, "default": "support-reply" },
+    { "name": "reason_pack", "type": "string", "required": false, "default": "support" },
+    { "name": "require_reason", "type": "boolean", "required": false, "default": true },
+    { "name": "min_draft_chars", "type": "number", "required": false, "default": 80 }
+  ]
+}
